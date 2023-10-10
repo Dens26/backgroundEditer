@@ -1,0 +1,70 @@
+*, ::after, ::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    padding: clamp(5px, 5vw,100px);
+    background: linear-gradient(90deg, #c57830, #69a352);
+    height: 100vh;
+}
+.title{
+    text-align: center;
+    font-weight: 400;
+    font-size: clamp(1.5rem, 10vw, 5rem);
+    padding: clamp(10px, 5vw,50px);
+}
+.title span{
+    font-weight: 900;
+}
+.color-container{
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-flow: column;
+    gap: 1rem;
+    align-items: center;
+}
+.color-group{
+    margin: clamp(5px, 5vw, 30px);
+}
+.color-group input{
+    visibility: hidden;
+    position: absolute;
+}
+.color-group label{
+    border: 3px solid white;
+    border-radius: 45px;
+    box-shadow: 5px 5px 5px black;
+    text-align: center;
+    padding: 10px 30px;
+    font-size: clamp(1rem, 10vw, 2.5rem);
+}
+.color-orientation{
+    display: flex;
+    flex-flow: column;
+}
+.color-orientation-info{
+    font-size: clamp(0.8rem, 10vw, 2rem);
+    width : clamp(100px, 80vw, 300px);
+    padding-top: 15px;
+    text-align: center;
+}
+.color-button{
+    margin: 20px;
+    display: flex;
+    flex-flow: column;
+    gap: 1rem;
+}
+.btn{
+    border: 1px solid white;
+    border-radius: 45px;
+    box-shadow: 5px 5px 5px black;
+    width: 150px;
+    height: 50px;
+}
+@media screen and (min-width:576px) {
+    .color-button{
+        flex-flow: row;
+    }
+}
